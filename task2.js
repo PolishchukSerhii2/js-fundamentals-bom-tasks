@@ -5,3 +5,20 @@
 //         
 // Запустіть виконане завдання за допомогою Live Server 
 // Перевірте виконання за допомогою команди node tests/task2.test.js
+
+let clickButton = document.querySelector("#button1");
+let doubleClickButton = document.querySelector("#button2");
+let hoverButton = document.querySelector("#button3");
+
+clickButton.addEventListener("click", () => {
+    document.body.style.backgroundColor = "blue";
+});
+
+doubleClickButton.addEventListener("dblclick", () => {
+    document.body.style.backgroundColor = "pink";
+});
+
+hoverButton.addEventListener("mouseover", () => {
+    document.body.style.backgroundColor = "brown";
+});
+
